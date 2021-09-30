@@ -24,14 +24,36 @@ body {
 
   // Page header styles
   .title {
-    text-align: center;
-    margin-bottom: 2rem;
     font-size: 4rem;
+    line-height: 1.2;
+    text-align: center;
     color: #333;
+    margin-bottom: 2rem;
+
+    @include partials.breakpoint-down(medium) {
+      font-size: 3rem;
+    }
+    
+    @include partials.breakpoint-down(small) {
+      font-size: 2.75rem;
+    }
   }
+
   .subtitle {
+    color: #777;
     text-align: center;
     margin-bottom: 2rem;
+
+    .sub-media {
+      opacity: 0.7;
+      text-decoration: none;
+      color: purple;
+
+      &:hover {
+        opacity: 1;
+        text-decoration: underline;
+      }
+    }
   }
 
   // SEARCH FORM STYLES
@@ -40,7 +62,6 @@ body {
     margin: 0 auto 3rem;
 
     @include partials.breakpoint-down(medium) {
-      // margin: 0 0 1.5rem;
       width: 100%;
     }
   }
@@ -54,6 +75,10 @@ body {
     font-size: 1rem;
     outline-color: purple;
     border: solid 1px #777;
+
+    @include partials.breakpoint-down(medium) {
+      width: 95%;
+    }
   }
 
   input[type="submit"] {
