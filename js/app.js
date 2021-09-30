@@ -32,6 +32,11 @@ form.addEventListener('submit', e => {
   .then(data => {
     console.log(data);
 
+    if(data.hints.length === 0) {
+      const errOut = `<p class="error-output">Food not found...</p>`;
+      wrapper.innerHTML = errOut;
+    }
+
     data.hints.forEach(hint => {
       const content = `
         <div class="card">
