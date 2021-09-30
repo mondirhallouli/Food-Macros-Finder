@@ -1,5 +1,6 @@
 @use 'partials';
 
+// GLOBAL RESET
 *, *::before, *::after {
   padding: 0;
   margin: 0;
@@ -7,23 +8,33 @@
   line-height: 1;
 }
 
+// GENERAL STYLES
 body {
   font-family: 'Oswald', sans-serif;
   background-color: #eee;
 }
 
+
 .container {
+  // MAIN CONTENT CONTAINER STYLES
   max-width: 81.25rem;
+  height: 96vh;
   margin: 0 auto;
   padding: 5rem 1rem 2rem;
 
+  // Page header styles
   .title {
     text-align: center;
     margin-bottom: 2rem;
-    font-size: 3rem;
+    font-size: 4rem;
     color: #333;
   }
+  .subtitle {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
 
+  // SEARCH FORM STYLES
   form {
     width: 28.125rem;
     margin: 0 auto 3rem;
@@ -52,7 +63,6 @@ body {
     padding: 1rem 0;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 1.25rem;
-    // font-weight: bold;
     background-color: purple;
     color: white;
     border: none;
@@ -61,6 +71,8 @@ body {
 
   // SEARCH RESULTS STYLES
   .post-wrapper {
+
+    // Search results wrapper styles
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(auto, 15.625rem));
     grid-column-gap: 3rem;
@@ -70,7 +82,6 @@ body {
     .card {
       background-color: white;
       box-shadow: 0px 5px 16px -4px rgba(51,51,51,0.69);
-
 
       &-img {
         height: 15.625rem;
@@ -112,5 +123,4 @@ body {
     }
   }
 }
-
 
