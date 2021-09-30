@@ -14,7 +14,6 @@ body {
   background-color: #eee;
 }
 
-
 .container {
   // MAIN CONTENT CONTAINER STYLES
   max-width: 81.25rem;
@@ -93,6 +92,12 @@ body {
     color: white;
     border: none;
     cursor: pointer;
+    opacity: 0.8;
+    transition: all 200ms ease-in-out;
+
+    &:hover {
+      opacity: 1;
+    }
   }
 
   // SEARCH RESULTS STYLES
