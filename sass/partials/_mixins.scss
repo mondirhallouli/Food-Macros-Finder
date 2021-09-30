@@ -1,0 +1,20 @@
+// maps for viewport sizes
+
+// (from this size and up) => 375px, 768px, 1024px
+$breakpoint-up: ("small": "375px", "medium": "768px", "large": "1024px");
+
+// (from this size and down) => 374px, 767px, 1023px
+$breakpoint-down: ("small": "374px", "medium": "767px", "large": "1023px");
+
+
+@mixin breakpoint-up($value) {
+    @media (min-width: map-get($breakpoint-up, $value)) {
+        @content;
+    }
+}
+
+@mixin breakpoint-down($size) {
+    @media (max-width: map-get($breakpoint-down, $size)) {
+        @content;
+    }
+}
