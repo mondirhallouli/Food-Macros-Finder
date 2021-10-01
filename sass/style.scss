@@ -18,7 +18,7 @@ body {
   // MAIN CONTENT CONTAINER STYLES
   max-width: 81.25rem;
   height: 96vh;
-  margin: 0 auto 2rem;
+  margin: 0 auto;
   padding: 5rem 1rem 2rem;
 
   // Page header styles
@@ -109,6 +109,7 @@ body {
     grid-column-gap: 3rem;
     grid-row-gap: 3rem;
     justify-content: center;
+    margin-bottom: 2rem;
 
     .card {
       background-color: white;
