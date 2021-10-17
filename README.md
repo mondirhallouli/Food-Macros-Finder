@@ -13,12 +13,12 @@
 - HTML
 
 - SCSS(CSS)
- - SASS maps
- - SASS mixins
+  - SASS maps
+  - SASS mixins
 
 - JavaScript
- - API - [edamam](https://developer.edamam.com/) food database API
- - AJAX
+  - API - [edamam](https://developer.edamam.com/) food database API
+  - AJAX
 
   [Edamam]: https://developer.edamam.com/
 
